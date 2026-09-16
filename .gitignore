@@ -163,3 +163,14 @@ docker-compose.override.yml
 htmlcov/
 test-results/
 playwright-report/
+
+# ---------------------------------------------------------------------------
+# Real solved-case benchmark - local-only case data (owner decision B,
+# docs/benchmark/OWNER-DECISION-real-case-data-class.md). Court documents,
+# transcribed evidence, ground truth and raw run outputs never leave the
+# machine that built them. Acquisition manifests (URLs + hashes) are tracked
+# under benchmark/acquisition/.
+# ---------------------------------------------------------------------------
+/benchmark/cases/
+/benchmark/ground-truth/
+/benchmark/results/
