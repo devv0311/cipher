@@ -1,0 +1,277 @@
+{
+  "caseId": "us-v-ulbricht-sdny-14cr68",
+  "dataClass": "real judicial record, local-only (owner decision B)",
+  "reproducibility": {
+    "lastComparison": {
+      "identical": true,
+      "samePack": true,
+      "tolerance": "zero \u2014 deterministic stages; wall-clock instants and time-derived ids normalised (blind-output.ts)"
+    },
+    "runs": {
+      "run-1": {
+        "evidencePackSha256": "38ee79ff45933548f18b303f4bfe1190054f9926bd6f76f35e862541d93b5a2b",
+        "gitCommit": "4fb0f602ee5cc49c7218385d302a8df80956f19d",
+        "nodeVersion": "v24.19.0",
+        "stages": [
+          {
+            "stage": "ingestion",
+            "status": "ingested"
+          },
+          {
+            "stage": "extraction",
+            "status": "extracted"
+          },
+          {
+            "stage": "resolution",
+            "status": "resolved"
+          },
+          {
+            "stage": "graph synthesis",
+            "status": "synthesized"
+          },
+          {
+            "stage": "topology analytics",
+            "status": "synthesized"
+          },
+          {
+            "stage": "spatial/temporal corroboration",
+            "status": "synthesized"
+          }
+        ]
+      },
+      "run-2": {
+        "evidencePackSha256": "38ee79ff45933548f18b303f4bfe1190054f9926bd6f76f35e862541d93b5a2b",
+        "gitCommit": "4fb0f602ee5cc49c7218385d302a8df80956f19d",
+        "nodeVersion": "v24.19.0",
+        "stages": [
+          {
+            "stage": "ingestion",
+            "status": "ingested"
+          },
+          {
+            "stage": "extraction",
+            "status": "extracted"
+          },
+          {
+            "stage": "resolution",
+            "status": "resolved"
+          },
+          {
+            "stage": "graph synthesis",
+            "status": "synthesized"
+          },
+          {
+            "stage": "topology analytics",
+            "status": "synthesized"
+          },
+          {
+            "stage": "spatial/temporal corroboration",
+            "status": "synthesized"
+          }
+        ]
+      },
+      "v1.1-run-1": {
+        "evidencePackSha256": "5c3339b4f5776b5a8462cc609221d2babd2af0091f37d5221c6e30a6b7c447de",
+        "gitCommit": "4fb0f602ee5cc49c7218385d302a8df80956f19d",
+        "nodeVersion": "v24.19.0",
+        "stages": [
+          {
+            "stage": "ingestion",
+            "status": "ingested"
+          },
+          {
+            "stage": "extraction",
+            "status": "extracted"
+          },
+          {
+            "stage": "resolution",
+            "status": "resolved"
+          },
+          {
+            "stage": "graph synthesis",
+            "status": "synthesized"
+          },
+          {
+            "stage": "topology analytics",
+            "status": "synthesized"
+          },
+          {
+            "stage": "spatial/temporal corroboration",
+            "status": "synthesized"
+          }
+        ]
+      },
+      "v1.1-run-2": {
+        "evidencePackSha256": "5c3339b4f5776b5a8462cc609221d2babd2af0091f37d5221c6e30a6b7c447de",
+        "gitCommit": "4fb0f602ee5cc49c7218385d302a8df80956f19d",
+        "nodeVersion": "v24.19.0",
+        "stages": [
+          {
+            "stage": "ingestion",
+            "status": "ingested"
+          },
+          {
+            "stage": "extraction",
+            "status": "extracted"
+          },
+          {
+            "stage": "resolution",
+            "status": "resolved"
+          },
+          {
+            "stage": "graph synthesis",
+            "status": "synthesized"
+          },
+          {
+            "stage": "topology analytics",
+            "status": "synthesized"
+          },
+          {
+            "stage": "spatial/temporal corroboration",
+            "status": "synthesized"
+          }
+        ]
+      }
+    }
+  },
+  "runs": {
+    "run-1": {
+      "assertionOutcomes": {
+        "GT-ALIAS-1": "not_scorable",
+        "GT-CON-1": "missed",
+        "GT-EV-1": "not_scorable",
+        "GT-FOR-1": "recovered",
+        "GT-FOR-2": "not_scorable",
+        "GT-FOR-3": "not_scorable",
+        "GT-ID-1": "partially_recovered",
+        "GT-ID-2": "recovered",
+        "GT-ID-3": "missed",
+        "GT-NEG-1": "correctly_absent",
+        "GT-NEG-2": "correctly_absent",
+        "GT-NEG-3": "correctly_absent",
+        "GT-NEG-4": "not_scorable",
+        "GT-NEG-5": "not_scorable",
+        "GT-OUT-1": "not_scorable",
+        "GT-OUT-2": "not_scorable",
+        "GT-OUT-3": "not_scorable",
+        "GT-REL-1": "missed",
+        "GT-REL-2": "missed",
+        "GT-ROLE-1": "not_scorable",
+        "GT-TL-1": "recovered",
+        "GT-TX-1": "missed"
+      },
+      "counts": {
+        "aliases": 3,
+        "analyticalSignals": 189,
+        "corroborationFindings": 2,
+        "entities": 47,
+        "evidenceItems": 63,
+        "extractedRecords": 164,
+        "personEntities": 29,
+        "relationships": 12
+      },
+      "entityResolution": {
+        "entitiesCarryingDefendantName": 15,
+        "identifierAnchoredDefendantFragments": 3,
+        "resolutionTypes": {
+          "ambiguous_name_conflict": 14,
+          "canonicalized_identifier": 18,
+          "exact_name_match": 10,
+          "new_entity": 5,
+          "shared_identifier_merge": 9,
+          "unlinked_mention": 8
+        }
+      },
+      "groundTruthSha256": "66bb76e8e337a2dd89071cee58149f7bd24199a086cf02d68057255f4bf0f238",
+      "name": "v1.0 official blind run",
+      "scoreTable": {
+        "byOutcome": {
+          "correctly_absent": 3,
+          "false_link": 0,
+          "missed": 5,
+          "not_scorable": 10,
+          "partially_recovered": 1,
+          "recovered": 3
+        },
+        "negativeSpecificity": 1,
+        "positiveRecall": 0.3888888888888889,
+        "positiveRecallModelVisible": 0.3888888888888889,
+        "scorable": 12,
+        "total": 22
+      },
+      "scorerVersion": "v2 (fragment-aware identity_link; path_exists)"
+    },
+    "v1.1-run-1": {
+      "assertionOutcomes": {
+        "GT-ALIAS-1": "not_scorable",
+        "GT-CON-1": "missed",
+        "GT-EV-1": "not_scorable",
+        "GT-FOR-1": "recovered",
+        "GT-FOR-2": "not_scorable",
+        "GT-FOR-3": "not_scorable",
+        "GT-ID-1": "partially_recovered",
+        "GT-ID-2": "recovered",
+        "GT-ID-3": "recovered",
+        "GT-NEG-1": "correctly_absent",
+        "GT-NEG-2": "correctly_absent",
+        "GT-NEG-3": "correctly_absent",
+        "GT-NEG-4": "not_scorable",
+        "GT-NEG-5": "not_scorable",
+        "GT-OUT-1": "not_scorable",
+        "GT-OUT-2": "not_scorable",
+        "GT-OUT-3": "not_scorable",
+        "GT-REL-1": "recovered",
+        "GT-REL-2": "recovered",
+        "GT-ROLE-1": "not_scorable",
+        "GT-TL-1": "recovered",
+        "GT-TX-1": "missed"
+      },
+      "counts": {
+        "aliases": 3,
+        "analyticalSignals": 221,
+        "corroborationFindings": 5,
+        "entities": 57,
+        "evidenceItems": 73,
+        "extractedRecords": 174,
+        "personEntities": 29,
+        "relationships": 27
+      },
+      "entityResolution": {
+        "entitiesCarryingDefendantName": 15,
+        "identifierAnchoredDefendantFragments": 3,
+        "resolutionTypes": {
+          "ambiguous_name_conflict": 14,
+          "canonicalized_identifier": 28,
+          "exact_name_match": 10,
+          "new_entity": 5,
+          "shared_identifier_merge": 9,
+          "unlinked_mention": 8
+        }
+      },
+      "groundTruthSha256": "66bb76e8e337a2dd89071cee58149f7bd24199a086cf02d68057255f4bf0f238",
+      "name": "v1.1 diagnostic (structural completion)",
+      "scoreTable": {
+        "byOutcome": {
+          "correctly_absent": 3,
+          "false_link": 0,
+          "missed": 2,
+          "not_scorable": 10,
+          "partially_recovered": 1,
+          "recovered": 6
+        },
+        "negativeSpecificity": 1,
+        "positiveRecall": 0.7222222222222222,
+        "positiveRecallModelVisible": 0.7222222222222222,
+        "scorable": 12,
+        "total": 22
+      },
+      "scorerVersion": "v2 (fragment-aware identity_link; path_exists)"
+    }
+  },
+  "transcriptionCoverage": {
+    "candidates": 729,
+    "candidatesInCitedSpans": 77,
+    "testimonyLines": 41213,
+    "testimonyLinesInCitedSpans": 2162
+  }
+}

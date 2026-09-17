@@ -18,6 +18,12 @@ decision below and it never mixes with either existing class.
 | B1 | [`CASE_BENCHMARK_REQUIREMENTS.md`](./CASE_BENCHMARK_REQUIREMENTS.md) — requirements and selection weights, fixed before research |
 | B2–B4 | [`candidate-cases.md`](./candidate-cases.md) — eight candidates, matrix, selection |
 | B5 | [`source-register.md`](./source-register.md) — every document, hash, licence and role |
+| B6 | [`transcription-protocol.md`](./transcription-protocol.md) — how testimony became evidence items, and where the protocol was not met |
+| B8 | [`us-v-ulbricht-sdny-14cr68-evidence-ground-truth-matrix.md`](./us-v-ulbricht-sdny-14cr68-evidence-ground-truth-matrix.md) |
+| B9 | [`us-v-ulbricht-sdny-14cr68-schema-mapping.md`](./us-v-ulbricht-sdny-14cr68-schema-mapping.md) — gaps G1–G9 |
+| B11 | [`../../reports/benchmark/us-v-ulbricht-sdny-14cr68/entity-resolution-report.md`](../../reports/benchmark/us-v-ulbricht-sdny-14cr68/entity-resolution-report.md) |
+| B20 | [`us-v-ulbricht-sdny-14cr68-FINAL-BENCHMARK-REPORT.md`](./us-v-ulbricht-sdny-14cr68-FINAL-BENCHMARK-REPORT.md) — **results** |
+| B21 | [`../progress/benchmark/`](../progress/benchmark/) — generated charts |
 
 ## Layout
 
@@ -29,14 +35,24 @@ benchmark/
 └── results/<case-id>/           git-ignored — frozen blind-run outputs
 ```
 
-## Reproduce acquisition
+## Commands, in order
 
 ```bash
 npm run benchmark:acquire
+npm run benchmark:blind-run -- us-v-ulbricht-sdny-14cr68 --label run-1 --pack 1.0.0
+npm run benchmark:blind-run -- us-v-ulbricht-sdny-14cr68 --label run-2 --pack 1.0.0
+npm run benchmark:compare-runs -- us-v-ulbricht-sdny-14cr68 run-1 run-2
+npm run benchmark:summarize -- us-v-ulbricht-sdny-14cr68 run-1
+npm run benchmark:compare-ground-truth -- us-v-ulbricht-sdny-14cr68 run-1
+python scripts/benchmark/render_visuals.py
 ```
 
-Downloads every registered document into `benchmark/cases/<case-id>/sources/<pack>/`
-and fails if any file's SHA-256 differs from the manifest.
+Acquisition downloads every registered document and fails if any file's SHA-256 differs
+from the manifest; it works anywhere. Every later step needs the local, git-ignored
+evidence pack and ground truth, which under decision B exist only on the machine that
+transcribed them. Summarise **before** opening ground truth. The blind run refuses to
+overwrite a frozen run, refuses a pack whose hash differs from its frozen hash, and runs
+the leak guard (`src/lib/benchmark/leak-guard.ts`) before any stage.
 
 ## Current case
 

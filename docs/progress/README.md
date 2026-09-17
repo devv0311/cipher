@@ -38,6 +38,15 @@ Also implemented: the evaluation harness (`npm run evaluate` →
 collector (`npm run collect:public`), and the command-centre UI shell, shared
 Inspector and redesigned graph surface (P5.10.2–P5.10.4).
 
+**Real solved-case benchmark (BM1): one case complete.** A third data class — real
+public judicial records, kept local-only by owner decision
+([`../benchmark/OWNER-DECISION-real-case-data-class.md`](../benchmark/OWNER-DECISION-real-case-data-class.md))
+— runs the unchanged pipeline blind on the pre-verdict public record of
+*United States v. Ulbricht* and scores it against what the court established.
+Results, limits and every measured figure live in
+[`../benchmark/us-v-ulbricht-sdny-14cr68-FINAL-BENCHMARK-REPORT.md`](../benchmark/us-v-ulbricht-sdny-14cr68-FINAL-BENCHMARK-REPORT.md).
+No second case starts until that report's §26 is acted on.
+
 ## 2. Closed
 
 **P6 ML is closed.** Model selection ended at P6.28; nothing in it is to be
@@ -99,6 +108,13 @@ collected and provenanced but dropped at the graph boundary with a warning.
 This is also **why the ML score stays advisory**: its dominant error class is
 corporate-family pairs, so promoting it to a merge would settle P6.21.2 by
 accident, in code.
+
+**Surfaced by BM1, not blocking M10.** Two questions the benchmark measured rather
+than argued: whether graph synthesis should canonicalise identifiers named only inside
+relationship mentions (gap G2 — it cost every communication edge on the real case), and
+whether to add entity kinds for online identities (gap G1 — it touches the frozen
+resolver's identifier list). See
+[`../benchmark/us-v-ulbricht-sdny-14cr68-schema-mapping.md`](../benchmark/us-v-ulbricht-sdny-14cr68-schema-mapping.md) §3.
 
 > Earlier ledger rows **P6.15**, **P6.18.5** and **P6.19.5** read
 > "Proposed — awaiting owner decision". Those are *historical* gate records, kept
