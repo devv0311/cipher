@@ -35,7 +35,7 @@ S.D.N.Y. 1:14-cr-00068; 2d Cir. 15-1815 (858 F.3d 71, 2017).
   server imaging, chat logs and journal entries read into the record, Bitcoin
   transaction tracing, online-forum posts, undercover account takeover, ID-document
   seizure, testimony of friends and agents, defence alternative-perpetrator case.
-- **Why it tests NetIntel:** the core factual question at trial was identity —
+- **Why it tests CIPHER:** the core factual question at trial was identity —
   whether the pseudonymous operator ("Dread Pirate Roberts") was the defendant —
   which is precisely alias/entity resolution across heterogeneous evidence.
   Negative ground truth is rich: two other investigated suspects the government

@@ -376,7 +376,7 @@ export async function collectGleif(
           method: "GET",
           headers: {
             Accept: "application/vnd.api+json",
-            "User-Agent": "CIPHER-research/0.1 (+https://github.com/devv0311/netintel-ai)",
+            "User-Agent": "CIPHER-research/0.1 (+https://github.com/devv0311/cipher)",
           },
         });
         if (response.status === 429) {
@@ -410,7 +410,7 @@ export async function collectGleif(
               method: "GET",
               headers: {
                 Accept: "application/vnd.api+json",
-                "User-Agent": "CIPHER-research/0.1 (+https://github.com/devv0311/netintel-ai)",
+                "User-Agent": "CIPHER-research/0.1 (+https://github.com/devv0311/cipher)",
               },
             });
           } catch (error) {

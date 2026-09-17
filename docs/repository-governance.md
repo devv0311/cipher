@@ -4,13 +4,22 @@ This document records the operational governance of the CIPHER repository: where
 
 ## Canonical Repository
 
-- **Repository**: `devv0311/netintel-ai` on GitHub
-- **Product name**: the product was renamed from *NetIntel AI* to **CIPHER** at P6.21.
-  The GitHub repository slug is deliberately NOT renamed: it is the published
-  identity of every commit already pushed, it is the contact URL in the GLEIF and
-  Wikidata crawler `User-Agent` (a URL that must resolve), and renaming it would
-  break every existing clone and every link in the phase record. Repository
-  identity and product name are separate things and are allowed to differ.
+- **Repository**: `devv0311/cipher` on GitHub
+- **Canonical URL**: `https://github.com/devv0311/cipher`
+- **Product name**: **CIPHER**. Product name and repository slug are the **same
+  identity** and must not diverge. The full contract is `docs/governance/naming.md`.
+- **Naming history**: the product was renamed from *NetIntel AI* to **CIPHER** at
+  P6.21, at which point the repository slug was deliberately left as
+  `devv0311/netintel-ai` and the two were recorded as separate things allowed to
+  differ. **That decision was superseded on 2026-09-18** by the CIPHER identity
+  migration, which brought the repository slug into line with the product name.
+  See `docs/migrations/CIPHER_IDENTITY_MIGRATION_AUDIT.md`.
+- **Rename status**: the GitHub rename to `devv0311/cipher` requires admin on the
+  repository and is pending an owner action by `devv0311`; the exact command is in
+  the audit document §6. Until it runs, `origin` stays on the pre-rename URL
+  because the canonical URL does not resolve yet and a push to it would fail.
+  GitHub redirects the old slug permanently after a rename, so existing clones keep
+  working.
 - **Visibility**: Public
 - **GitHub is the single source of truth** for project progress. No implementation is considered complete until it exists on the remote.
 

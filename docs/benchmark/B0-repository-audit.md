@@ -63,3 +63,10 @@ not a git repository. A fresh clone of `origin/master` was taken; a recursive
 comparison ignoring line endings found no differences. All benchmark work is done
 in the clone. Push access to `devv0311/netintel-ai` was confirmed via the GitHub API.
 `node_modules` is not installed in either copy.
+
+> **Historical note (2026-09-18).** The repository slug and folder names above are
+> recorded as they were on 2026-09-16. The canonical repository is now
+> `devv0311/cipher` — see `docs/governance/naming.md`. The names are left as
+> captured because this section records which working copy was audited and which
+> slug the access check was performed against; rewriting them would make the
+> record false.

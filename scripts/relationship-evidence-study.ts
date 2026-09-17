@@ -179,12 +179,21 @@ function main(): void {
   // drawn from the SAME asked-for LEI population as the negatives, so a
   // difference in edge rate is a property of the pairs, not the sample.
   //
+  // LEGACY REPRODUCIBILITY CONSTANT - DO NOT RENAME.
+  //
   // The seed literal below deliberately keeps its pre-rename spelling. It is
-  // not a name: it is the input to the hash that fixes WHICH 500 pairs the
-  // control set contains. Renaming it to "cipher-" would draw a different
-  // sample and silently change P6.20's published 0/500 control result, which
-  // could then no longer be reproduced from the record. It is a measurement
-  // constant, and it stays frozen at the value the published run used.
+  // not a name and it is not current branding: it is the input to the hash that
+  // fixes WHICH 500 pairs the control set contains. Renaming it to "cipher-"
+  // would draw a different sample and silently change P6.20's published 0/500
+  // control result, which could then no longer be reproduced from the record.
+  // It is a measurement constant, and it stays frozen at the value the
+  // published run used.
+  //
+  // Re-confirmed and re-frozen by the CIPHER identity migration on 2026-09-18,
+  // which renamed the repository identity to devv0311/cipher everywhere that is
+  // branding. This literal is explicitly out of that scope. See
+  // docs/migrations/CIPHER_LEGACY_REFERENCE_REGISTER.md (D1) and
+  // docs/governance/naming.md section 3.
   const asked = [...askedFor].sort();
   const rand = (i: number) => {
     const h = crypto.createHash("sha256").update(`netintel-p6.20-control-${i}`).digest();

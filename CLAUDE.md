@@ -8,7 +8,7 @@ below, which you read at the start of a session instead of being told in a promp
 
 ## 1. What this project is
 
-CIPHER (repository slug `devv0311/netintel-ai`, deliberately not renamed) is a
+CIPHER (canonical repository `devv0311/cipher`) is a
 **demonstration** investigative-intelligence platform: evidence ingestion →
 extraction → deterministic entity resolution → graph synthesis → topology
 analytics → spatial/temporal corroboration → grounded Copilot → dossier. It is
@@ -26,6 +26,33 @@ Two data classes exist and are **never mixed**:
 No real FIR, CDR, bank, Aadhaar, phone, financial-identifier, private or
 classified data may enter this repository at any point.
 
+### Identity — non-negotiable
+
+**The product is CIPHER. The canonical repository is `devv0311/cipher`
+(`https://github.com/devv0311/cipher`).** Product name and repository slug are one
+identity and must not diverge. The full contract, including every surface and its
+canonical spelling, is `docs/governance/naming.md`. CIPHER is a name, not an
+acronym — never invent an expansion for it.
+
+- **`netintel-ai`, `netintel`, `NetIntel`, `NetIntel AI` are HISTORICAL ONLY.**
+  Never reintroduce them into a current-state document, a UI string, package
+  metadata, a generated report, a filename, a log or telemetry label, or a contact
+  URL. They may appear **only** as (a) a recorded historical fact, (b) external or
+  third-party source material, (c) an immutable Git object, or (d) a frozen
+  reproducibility constant — each of which is listed with its reason in
+  `docs/migrations/CIPHER_LEGACY_REFERENCE_REGISTER.md`.
+- **`ShadowTrace` in any spelling has never existed in this repository.** It is not
+  a predecessor name here. Do not add it and do not "restore" it. (`shadow-lg` and
+  the English verb "to shadow" are ordinary tokens, not identity — leave them.)
+- **Everything you generate — docs, code, UI, reports, commit messages — uses
+  CIPHER.**
+- **External contact and `User-Agent` URLs point at
+  `https://github.com/devv0311/cipher`.**
+- **One frozen exception:** the seed literal in
+  `scripts/relationship-evidence-study.ts` keeps its pre-rename spelling because it
+  is a hash input that fixes a published benchmark sample. Renaming it would
+  silently invalidate P6.20's published result. Do not touch it.
+
 ## 2. Canonical documents — read before acting, in this order
 
 | Question | Authority |
@@ -39,6 +66,7 @@ classified data may enter this repository at any point.
 | How good is the model, on what | `docs/evaluation/README.md` → `ml-final-test-4.md`, `ml-model-card.md` |
 | What a dataset may be used for | `docs/evaluation/ml-evaluation-protocol.md` §2 |
 | Where data came from, under what licence | `docs/data-research/source-registry.md`, `docs/evaluation/ml-dataset-card.md` |
+| What the product and repository are called | **`docs/governance/naming.md`** |
 | Git, branch and secret protocol | `docs/repository-governance.md` |
 | What a screenshot proved, and when | `docs/progress/evidence/**` (**historical**) |
 

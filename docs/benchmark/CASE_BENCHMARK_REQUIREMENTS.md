@@ -3,7 +3,7 @@
 **Status:** Defined 2026-09-16, before any case was selected.
 **Question the benchmark answers:** given only the publicly reconstructable,
 pre-verdict evidence of a real case — never the outcome — how closely does
-NetIntel's evidence reconstruction agree with what the court established?
+CIPHER's evidence reconstruction agree with what the court established?
 
 This is written before case research so that the case is chosen to fit the
 requirements, not the requirements to fit a case.

@@ -102,7 +102,7 @@ Dossier / Report
 ## Repository Structure
 
 ```text
-netintel-ai/
+cipher/
 ├── CLAUDE.md              # Durable AI operating rules — read first
 ├── docs/                  # Project documentation
 │   ├── architecture/        # ADR-001 stack, stack contract, ML integration boundary

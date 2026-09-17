@@ -6,6 +6,11 @@
 
 > ### HISTORICAL — a point-in-time assessment, correct for `4493a3e` (2026-09-03).
 >
+> The repository is addressed above as `devv0311/netintel-ai`, its slug on that
+> date. The canonical repository is now `devv0311/cipher`
+> (`docs/governance/naming.md`); the original slug is left in place because this
+> header records which repository was inspected, at which commit.
+>
 > Every count below (ledger rows, file counts, milestone state) describes the
 > repository as it was at that commit, before the P6 public-data collection, the
 > P6.24–P6.28 ML work and the P6.29 corrections. It is kept as the record of what
