@@ -4,6 +4,14 @@
   "private": true,
   "type": "module",
   "description": "CIPHER \u2014 synthetic-data investigative intelligence platform (application foundation)",
+  "homepage": "https://github.com/devv0311/cipher#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devv0311/cipher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devv0311/cipher/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
