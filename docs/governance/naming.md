@@ -90,17 +90,18 @@ Every legacy string that survives a migration must be listed, with its reason, i
 The canonical slug is **`cipher`** and the canonical URL is
 **`https://github.com/devv0311/cipher`**.
 
-As of 2026-09-18 the GitHub rename is **pending an owner action**: it requires
-admin permission on `devv0311/netintel-ai`, which the migrating account does not
-hold. Until the owner performs it:
+The GitHub rename is **done**. Owner `devv0311` performed it on 2026-09-18 (recorded
+at ledger row M-ID-1):
 
-- Every in-repository reference already uses the canonical `cipher` form.
-- The Git remote `origin` still points at the pre-rename URL, because the new one
-  does not resolve yet and a push to it would fail.
-- GitHub issues a permanent redirect from the old slug after a rename, so existing
-  clones and already-published links keep working.
+- `devv0311/netintel-ai` is now `devv0311/cipher`; `https://github.com/devv0311/cipher`
+  resolves.
+- Every in-repository reference already used the canonical `cipher` form before the
+  rename.
+- The Git remote `origin` has been repointed at the canonical URL.
+- GitHub issues a permanent redirect from the old slug, so pre-existing clones and
+  already-published links keep working.
 
-The exact remaining action is recorded in
+The action as originally planned is recorded in
 `docs/migrations/CIPHER_IDENTITY_MIGRATION_AUDIT.md` §6.
 
 ## 5. Legacy names — historical only

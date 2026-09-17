@@ -14,12 +14,11 @@ This document records the operational governance of the CIPHER repository: where
   differ. **That decision was superseded on 2026-09-18** by the CIPHER identity
   migration, which brought the repository slug into line with the product name.
   See `docs/migrations/CIPHER_IDENTITY_MIGRATION_AUDIT.md`.
-- **Rename status**: the GitHub rename to `devv0311/cipher` requires admin on the
-  repository and is pending an owner action by `devv0311`; the exact command is in
-  the audit document §6. Until it runs, `origin` stays on the pre-rename URL
-  because the canonical URL does not resolve yet and a push to it would fail.
-  GitHub redirects the old slug permanently after a rename, so existing clones keep
-  working.
+- **Rename status**: done. `devv0311` renamed `devv0311/netintel-ai` to
+  `devv0311/cipher` on 2026-09-18 (owner action recorded at ledger row M-ID-1).
+  `https://github.com/devv0311/cipher` resolves; `origin` has been repointed at the
+  canonical URL. GitHub redirects the old slug permanently, so pre-existing clones
+  and published links keep working.
 - **Visibility**: Public
 - **GitHub is the single source of truth** for project progress. No implementation is considered complete until it exists on the remote.
 
